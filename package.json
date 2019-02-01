@@ -1,0 +1,34 @@
+{
+  "name": "jiexi",
+  "version": "1.0.0",
+  "description": "api文档翻译",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "info",
+    "lesson",
+    "teach",
+    "information",
+    "api",
+    "detail"
+  ],
+  "bin": {
+    "jiexi": "index.js"
+  },
+  "author": "ygg",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yegao/jiexi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yegao/jiexi/issues"
+  },
+  "homepage": "https://github.com/yegao/jiexi#readme",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "commander": "^2.19.0"
+  }
+}
