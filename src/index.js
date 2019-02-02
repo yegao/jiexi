@@ -5,11 +5,12 @@ const colors = require('colors')
 const search = require('./utils/search')
 
 commander.version('1.0.0','-v, --version').option('-t, --channel [channel]','选择文档类目，可选项目有 nodejs ').action(function ({channel}) {
+    let type = 'Node.js'
     switch(channel){
-        case 'nodejs':console.log(colors.green.bold('进入') + colors.yellow.bold('Node.js') + colors.green.bold('频道...'));break;
-        default : this.channel = 'nodejs';console.log(colors.yellow.bold('当前正在Node.js频道...'))
+        case 'nodejs':type= 'Node.js';break;
+        default : this.channel = 'nodejs';type = 'Node.js';
     }
-    console.log(colors.rainbow("\n-##########################################-#################-\n\n"))
+    console.log(colors.rainbow("\n-############################# ") + colors.yellow.bold('当前处于 ' + type + ' 频道') + colors.rainbow(" ###############################-\n"))
 })
 
 commander.action(function(keyword){
