@@ -3,7 +3,7 @@ const colors = require('colors')
 const path = require('path')
 
 module.exports = function(keyword, channel){
-    let directory = path.resolve(__dirname, "..", channel)
+    let directory = path.resolve(__dirname, "..", "..", channel)
     keys = keyword.split('.')
     let pageName = keys[0]+".md"
     let pagePath = path.resolve(directory,pageName)

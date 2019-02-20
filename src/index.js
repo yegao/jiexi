@@ -3,8 +3,8 @@
 const commander = require('commander')
 const colors = require('colors')
 const search = require('./utils/search')
-
-commander.version('1.0.0','-v, --version').option('-t, --channel [channel]','选择文档类目，可选项目有 nodejs ').action(function ({channel}) {
+const package = require('./../package.json')
+commander.version(package.version,'-v, --version').option('-t, --channel [channel]','选择文档类目，可选项目有 nodejs ').action(function ({channel}) {
     let type = 'Node.js'
     switch(channel){
         case 'nodejs':type= 'Node.js';break;
