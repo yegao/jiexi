@@ -34,8 +34,5 @@
     "prompt": "^1.0.0",
     "uglify-es": "^3.3.9"
   },
-  "devDependencies": {},
-  "files": [
-    "dist/*"
-  ]
+  "devDependencies": {}
 }
