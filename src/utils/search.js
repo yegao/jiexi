@@ -55,7 +55,8 @@ module.exports = function search(keyword, channel){
     catch(err){
         prompt.start()
         console.log('搜不到该关键字,请换一个关键字')
-        prompt.get(['keyword'], function(err, result){
+        prompt.message = colors.rainbow(" ⚙ ")
+        prompt.get([{name:'keyword',description:'关键字'}], function(err, result){
             if(err){
                 return
             }
