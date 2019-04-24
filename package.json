@@ -1,6 +1,6 @@
 {
   "name": "jiexi",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "api文档翻译",
   "main": "dist/index.js",
   "scripts": {
