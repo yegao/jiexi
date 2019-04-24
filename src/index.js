@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const commander = require('commander')
+const prompt = require('prompt')
 const colors = require('colors')
 const search = require('./utils/search')
 const package = require('./../package.json')
@@ -18,24 +19,5 @@ commander.action(function(keyword){
         search(keyword, this.channel)
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 commander.parse(process.argv)
